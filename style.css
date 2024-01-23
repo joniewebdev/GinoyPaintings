@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.logo {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    font-size: 50px;
+    font-family: William-Narasi;
+    color: white;
+}
+
+.bg {
+    background-image: linear-gradient(white 70%, #d9e1f0);
+    height: 100vh;
+    width: 100vw;
+    z-index: -99;
+    position: fixed;
+}
+
+.bgphone {
+    display: none;
+    background-color: #edf0f5;
+    height: 100vh;
+    width: 100vw;
+    z-index: -99;
+    position: fixed;
+}
+
+.upper {
+    display: flex;
+    height: 80vh;
+}
+
+.left {
+    flex: 3.5;
+    width: 100%;
+    background: radial-gradient(circle at bottom 20% right 0%, white, #b3b3bc);
+}
+
+.right {
+    flex: 9;
+    width: 100%;
+    background: #e1e1ec;
+}
+
+.podium {
+    z-index: -97;
+    position: fixed;
+    top: 70vh;
+    padding-left: 10px;
+}
+
+.podium img {
+    width: 55vw;
+}
+
+.podiumphone {
+    z-index: -97;
+    position: fixed;
+    top: 55vh;
+    display: none;
+    padding-left: 20vw;
+}
+
+.podiumphone img {
+    width: 80vw;
+}
+
+.graycircle {
+    position:fixed;
+    display: none;
+    z-index: -98;
+    height: 85vw;
+    width: 85vw;
+    border-radius: 50%;
+    background-color: #dbdfea;
+    top: 20vh;
+    margin-left: 7vw;
+}
+
+.dahon {
+    z-index: -96;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.dahon img {
+    width: 45vw;
+}
+
+.colors {
+    z-index: -95;
+    position: fixed;
+    right: 20px;
+    bottom: 1vh;
+}
+
+.colors img {
+    width: 40vw;
+}
+
+.content {
+    background: none;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+.item {
+    display: none;
+}
+
+.code {
+    font-size: max(1.8vw, 20px);
+    font-family: BonvenoCF;
+    padding-left: 35%;
+    top: 30px;
+    position: absolute;
+}
+
+.codename {
+    font-size: 100px;
+    font-family: William-Narasi;
+    top: 40px;
+    padding-left: 35%;
+    position: absolute;
+}
+
+.item .itemPic {
+    position: fixed;
+    padding-left: 4.5%;
+    bottom: 27vh;
+}
+
+.cindy .itemPic img, .florence .itemPic img, .gwendolyn .itemPic img, .judith .itemPic img, .mona .itemPic img, .berthe .itemPic img {
+    width: 28vw;
+}
+
+.cynthia .itemPic img {
+    width: 32vw;
+}
+
+.dior .itemPic {
+    bottom: 9vh;
+}
+
+.rachel .itemPic {
+    bottom: 21vh;
+}
+
+.dior .itemPic img, .rachel .itemPic img {
+    width: 42vw;
+}
+
+.doris .itemPic img {
+    width: 35vw;
+}
+
+.elaine .itemPic, .kathleen .itemPic {
+    padding-left: 10%;
+}
+
+.elaine .itemPic img,  .harmony .itemPic img,  .kathleen .itemPic img,  .leonora .itemPic img, .barbara .itemPic img {
+    width: 23vw;
+}
+
+.eva .itemPic, .frida .itemPic, .jane .itemPic {
+    padding-left: 12%
+}
+
+.eva .itemPic img, .frida .itemPic img, .jane .itemPic img {
+    width: 20vw;
+}
+
+.jenny .itemPic img {
+    width: 15vw;
+}
+
+.joan .itemPic img {
+    width: 30vw;
+}
+
+.florence .itemPic, .joan .itemPic, .rachel .itemPic {
+    padding-left: 7.5%
+}
+
+.gwendolyn .itemPic, .mona .itemPic, .berthe .itemPic {
+    padding-left: 9%;
+}
+
+.harmony .itemPic, .leonora .itemPic, .barbara .itemPic {
+    padding-left: 11%;
+}
+
+.jenny .itemPic {
+    padding-left: 14.5%;
+}
+
+.details {
+    display: flex;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    padding: 10px;
+    width: 45%;
+}
+
+.hidePhone {
+    display: block;
+}
+
+.size {
+    font-size: 40px;
+    font-family: Baskerville;
+}
+
+.vital {
+    font-size: 20px;
+    font-family: BonvenoCF;
+}
+.inches {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Baskerville;
+}
+.paint {
+    font-size: 25px;
+    font-family: BonvenoCF;
+
+}
+
+.price {
+    font-size: 35px;
+    font-family: Baskerville;
+}
+
+.addInfo {
+    font-family: BonvenoCF;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.col1 {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #331d14;
+    text-align: right;
+}
+
+.col2 {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.plastic {
+    position: absolute;
+    right: 20px;
+    bottom: 21vh;
+    font-size: max(3.5vw, 30px);
+    font-family: OratorSTD;
+    color: white;
+}
+
+.addonItems {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.column1, .column2 {
+    display: flex;
+    flex: 1;
+}
+
+.column1 img, .column2 img {
+    width: 100%;
+}
+
+.addonItems .prices {
+    font-size: 35px;
+    font-family: Baskerville;
+}
+
+.hose, .twilly1, .twilly2, .furball {
+    flex: 1;
+    text-align: center;
+    font-size: 25px;
+    font-family: BonvenoCF;
+}
+
+.note {
+    padding: 10px;
+    font-size: 15px;
+    font-family: BonvenoCF;
+}
+
+.active {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    position: absolute;
+    font-size: 30px;
+    padding: 10px 20px;
+    bottom: 50%;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    opacity: 0.5;
+}
+
+button:hover {
+    color: white;
+    background-color: gray;
+}
+  
+.prev {
+    left: 10px;
+}
+  
+.next {
+    right: 10px;
+}
+
+@font-face {
+    font-family: OratorSTD;
+    src: url('fonts/Orator-Std-Font.otf');
+}
+
+@font-face {
+    font-family: BonvenoCF;
+    src: url('fonts/BonvenoCF-Light.otf');
+}
+
+@font-face {
+    font-family: Baskerville;
+    src: url('fonts/BASKVILL.ttf');
+}
+
+@font-face {
+    font-family: William-Narasi;
+    src: url('fonts/William-Narasi.otf');
+}
+
+@media (max-width: 700px) {
+    .logo {
+        top: 5px;
+        left: 10px;
+        font-size: 25px;
+        color: black;
+    }
+
+    .bg, .podium {
+        display: none;
+    }
+
+    .bgphone, .podiumphone, .graycircle {
+        display: block;
+    }
+
+    .dahon img {
+        width: auto;
+        height: 40vh;
+    }
+
+    .code {
+        padding-left: 10%;
+        top: 50px;
+    }
+
+    .codename {
+        padding-left: 12%;
+        top: 70px;
+        font-size: 70px;
+    }
+
+    .item .itemPic {
+        z-index: -50;
+        padding-left: 0;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: auto;
+    }
+
+    .item .itemPic img {
+        width: auto;
+        height: 30vh;
+    }
+
+    .details {
+        position: fixed;
+        top: auto;
+        left: 50%;
+        right: auto;
+        bottom: 22%;
+        transform: translate(-50%, 50%);
+        padding: 0;
+        width: 100%;
+    }
+
+    .size {
+        font-size: 23px;
+    }
+
+    .vital {
+        font-size: 13px;
+    }
+    
+    .inches {
+        font-size: 16px;
+    }
+
+    .paint {
+        font-size: 13px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .details .addInfo {
+        font-size: 12px;
+    }
+
+    .col1, .col2 {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .hidePhone {
+        display: none;
+    }
+
+    .plastic {
+        color: #b3b3bc;
+        font-size: 20px;
+        bottom: 0;
+        top: 63vh;
+    }
+
+    button {
+        margin: 10px;
+    }
+
+    .addonItems {
+        display: block;
+        width: 80%;
+        margin-top: 50%;
+    }
+
+    .column1 img, .column2 img {
+        width: 80%;
+    }
+
+    .hose, .twilly1, .twilly2, .furball {
+        height: 20%;
+        font-size: 13px;
+    }
+
+    .addonItems .prices {
+        font-size: 20px;
+    }
+
+    .note {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .colors img {
+        width: 90vw;
+    }
+}
